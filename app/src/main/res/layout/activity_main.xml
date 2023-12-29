@@ -20,6 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="0.98">
         <EditText
+            android:id="@+id/question"
             android:layout_weight="1.5"
             android:layout_width="match_parent"
             android:layout_marginStart="8dp"
@@ -28,6 +29,7 @@
             android:layout_height="match_parent"
             />
         <ImageButton
+            android:id="@+id/sendBtn"
             android:layout_gravity="center"
             android:layout_weight="0.5"
             android:layout_width="wrap_content"
@@ -38,6 +40,9 @@
     </LinearLayout>
 
     <ListView
+        android:id="@+id/listView"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
         android:layout_marginBottom="5dp"
         android:layout_width="0dp"
         android:layout_height="0dp"
