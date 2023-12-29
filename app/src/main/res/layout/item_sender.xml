@@ -8,8 +8,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:minWidth="50dp"
-        android:backgroundTint="@color/green"
+        app:layout_constraintWidth_min="70dp"
+        app:layout_constraintWidth_max="350dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/darkgrey"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,23 +27,28 @@
                 android:paddingTop="3dp"
                 android:paddingEnd="4dp"
                 android:paddingStart="7dp"
-                android:background="@color/green"
-                android:backgroundTint="@color/green"
+                android:background="@color/darkgrey"
+                android:backgroundTint="@color/darkgrey"
                 android:text="You"
-                android:textSize="8dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
                 />
             <TextView
                 android:id="@+id/textViewSender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="3dp"
+                android:textColor="@color/white"
                 android:paddingEnd="4dp"
                 android:paddingStart="7dp"
-                android:background="@color/green"
-                android:backgroundTint="@color/green"
+                android:textSize="20dp"
+                android:background="@color/darkgrey"
+                android:backgroundTint="@color/darkgrey"
                 android:text="hi"
                 />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

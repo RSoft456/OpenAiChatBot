@@ -4,12 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightgrey"
     tools:context=".MainActivity">
 
+    <TextView
+        android:gravity="center"
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Hi! I am an Ai chat bot, Anything on your mind? Ask away.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:weightSum="2"
         android:layout_marginBottom="5dp"
         android:background="@drawable/send_message_bg"
@@ -20,11 +33,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="0.98">
         <EditText
+            android:hint="Type here..."
+            android:textColor="@color/black"
             android:id="@+id/question"
             android:layout_weight="1.5"
             android:layout_width="match_parent"
             android:layout_marginStart="8dp"
-            android:maxLines="1"
+            android:maxLines="2"
             android:ellipsize="end"
             android:layout_height="match_parent"
             />
@@ -46,11 +61,16 @@
         android:layout_marginBottom="5dp"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:paddingBottom="3dp"
         tools:listitem="@layout/item_receiver"
         app:layout_constraintHeight_percent="0.92"
         app:layout_constraintWidth_percent="1"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+    </ListView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
