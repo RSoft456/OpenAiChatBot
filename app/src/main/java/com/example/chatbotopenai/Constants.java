@@ -6,7 +6,5 @@ public class Constants {
     public static String getBASE_URL() {
         return BASE_URL;
     }
-    public static String getAPI_KEY() {
-        return API_KEY;
-    }
+    public static String getAPI_KEY() { return API_KEY; }
 }
